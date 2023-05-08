@@ -47,3 +47,8 @@ body {
 .relogio span.tempo {
     font-size: 10px;
 }
+
+.relogio:hover{
+    background-color: rgba(117, 76, 155, 0.705);
+    transition: 0.5s;
+}
