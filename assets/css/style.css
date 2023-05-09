@@ -42,16 +42,17 @@ body {
 .relogio span {
     font-weight: bolder;
     font-size: 30px;
+    animation: changeNumber 0.5s;
+    animation-fill-mode: both;
 }
 
 .relogio span.tempo {
     font-size: 10px;
 }
 
-.relogio:hover{
+.relogio:hover {
     background-color: rgba(117, 76, 155, 0.705);
     transition: 0.5s;
-    
 }
 
 .relogio:not(:hover) {
@@ -72,3 +73,21 @@ body {
     background-image: linear-gradient(to right, #a544ff, #cecece);
     -webkit-background-clip: text; /* For Safari/Chrome */
 }
+
+@keyframes changeNumber {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .relogio span.tempo {
+    animation: changeNumber 0.5s;
+    animation-fill-mode: both;
+  }
+
