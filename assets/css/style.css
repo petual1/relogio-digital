@@ -51,4 +51,24 @@ body {
 .relogio:hover{
     background-color: rgba(117, 76, 155, 0.705);
     transition: 0.5s;
+    
+}
+
+.relogio:not(:hover) {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.container {
+    text-align: center;
+}
+
+.local {
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    font-size: 17px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #a544ff, #cecece);
+    -webkit-background-clip: text; /* For Safari/Chrome */
 }
